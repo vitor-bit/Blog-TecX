@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Blog/Styles/pagina-inicial.css" media="screen" />
+    <script type="text/javascript" src="/Blog/JavaScript/pagina-inicial.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&family=Nunito:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="shortcut icon" href="/Img/logolaranja.png" />
+    <title>BlogTecX</title>
+</head>
+
+<body>
+    <header class="header-principal">
+        <img id="imagem-blog" src="/Img/logo-blog.png" width="220rem">
+        <div class="buttons">
+            <button id="button-sobre" onclick="redirecionarSobreMim()">Sobre mim</button>
+            <div id="menu-categorias" class="menu-categorias">
+                <button id="button-categorias" onclick="abrirMenu()">Categorias</button>
+                <ul id="categorias">
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="postagens">
+        <section class="angular" onclick="redirecionarCards('angular')">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <header class="header-an">
+                <img id="imagem-an" src="/Img/angularlogo.png" alt="imagem-an" width="60rem">
+                <h1 id="titulo-an">Angular</h1>
+            </header>
+            <main class="main-an">
+                <p id="texto-an">
+                    <span id="icon-lampada-an" class="material-symbols-outlined">info</span>
+                    É um framework JavaScript de código aberto mantido pela Google para a construção de SPA (sigla para
+                    Single Page Applications ou Aplicações de Página Única). Resumidamente, uma SPA é basicamente uma
+                    aplicação web construída...
+                </p>
+                <p id="box-data-an">
+                    <span id="icon-clock-an" class="material-symbols-outlined">schedule</span>
+                    <span id="data-an"></span>
+                    <span id="icon-check-an" class="material-symbols-outlined">check</span>
+                    <span><span id="visualizacoes-an" style="color: var(--cor-azul-escuro);"></span> views</span>
+
+                </p>
+            </main>
+            <footer class="footer-an">
+                <p id="categoria-an">Frameworks</p>
+            </footer>
+        </section>
+        <section class="react" onclick="redirecionarCards('react')">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <header class="header-re">
+                <img id="imagem-re" src="/Img/react logo.png" alt="imagem-re" width="60rem">
+                <h1 id="titulo-re">React</h1>
+            </header>
+            <main class="main-re">
+                <p id="texto-re">
+                    <span id="icon-lampada-re" class="material-symbols-outlined">info</span>
+                    O React é conhecido como uma biblioteca de JavaScript utilizado para a criação de user interfaces
+                    (UI),
+                    ou interfaces do usuário em português.
+                    Para deixar as coisas uma pouco mais claras, aqui vai uma breve explicação sobre o que é...
+
+                </p>
+                <p id="box-data-re">
+                    <span id="icon-clock-re" class="material-symbols-outlined">schedule</span>
+                    <span id="data-re"></span>
+                    <span id="icon-check-re" class="material-symbols-outlined">check</span>
+                    <span><span id="visualizacoes-re" style="color: var(--cor-azul-escuro);"></span> views</span>
+
+                </p>
+            </main>
+            <footer class="footer-re">
+                <p id="categoria-re">Frameworks</p>
+            </footer>
+        </section>
+    </div>
+    <footer class="footer-principal">
+        <p>Desenvolvido por Vitor Bitencourt Falasca</p>
+    </footer>
+</body>
+
+</html>

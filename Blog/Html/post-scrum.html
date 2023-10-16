@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Blog/Styles/post.css" media="screen" />
+    <script type="text/javascript" src="/Blog/JavaScript/post-scrum.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&family=Nunito:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="shortcut icon" href="/Img/logolaranja.png" />
+    <title>BlogTecX</title>
+</head>
+
+<body>
+    <header class="header-principal">
+        <img id="imagem-blog" src="/Img/logo-blog.png">
+        <div class="buttons">
+            <button id="button-sobre" onclick="redirecionarSobreMim()">Sobre mim</button>
+            <button id="button-inicio" onclick="redirecionarPagInicial()">Voltar ao inicio</button>
+        </div>
+    </header>
+    <main class="main-principal">
+        <div class="artigo">
+            <h1 id="titulo">O Que É Scrum?</h1>
+            <p id="texto">
+                Scrum é um conjunto de boas práticas empregado no gerenciamento de projetos complexos, em que não se
+                conhece todas as etapas ou necessidades.
+                <br>
+                <br>
+                Focado nos membros da equipe, o Scrum torna os processos mais simples e claros, pois mantém registros
+                visíveis sobre o andamento de todas as etapas.
+                <br>
+                <br>
+                Assim, os participantes sabem em que fase o projeto está, o que já foi concluído e o que falta ser feito
+                para a sua entrega.
+                <br>
+                <br>
+                A metodologia também possibilita que produtos sejam apresentados em menor tempo, sem deixar de lado a
+                qualidade.
+                <br>
+                <br>
+                Ela é aplicada a partir de ciclos rápidos, chamados sprints, nos quais há um tempo determinado para que
+                as atividades sejam concluídas – geralmente, entre duas e quatro semanas.
+                <br>
+                <br>
+                Priorizando a criatividade e fluidez nos processos, o Scrum segue seis princípios:
+                <br>
+                <br>
+                • Flexibilidade dos resultados
+                <br>
+                • Flexibilidade dos prazos
+                <br>
+                • Times pequenos
+                <br>
+                • Revisões constantes
+                <br>
+                • Colaboração
+                <br>
+                • Orientação a objetos.
+                <br>
+                <br>
+                Por possibilitar a correção de erros de maneira orgânica durante os sprints, o Scrum é considerado uma
+                metodologia ágil.
+            </p>
+            <h1 id="titulo">O Que É Metodologia Ágil?</h1>
+            <p id="texto">
+                Metodologia ágil é uma ferramenta que permite a aplicação do desenvolvimento ágil em um processo.
+                <br>
+                <br>
+                Já o desenvolvimento ágil pode ser descrito como uma abordagem que foca a construção de produtos de modo
+                colaborativo, através do trabalho de equipes multidisciplinares que possuem autonomia em suas ações.
+                <br>
+                <br>
+                Essa abordagem segue os valores expressos no Manifesto Ágil ou Manifesto para o Desenvolvimento Ágil de
+                Software, elaborado por 17 programadores em 2001 e disponível neste site.
+                <br>
+                <br>
+                O desenvolvimento ágil faz oposição ao desenvolvimento tradicional de softwares, que ocorre em formato
+                de cascata.
+                <br>
+                <br>
+                Isso significa que uma etapa deve ser concluída antes que outra comece, o que pede grande rigidez quanto
+                ao papel desempenhado por cada membro da equipe e os prazos definidos.
+                <br>
+                <br>
+                Os programadores que escreveram o Manifesto Ágil perceberam que executar projetos de tecnologia no
+                formato cascata resultava em desperdício de tempo e esforço.
+                <br>
+                <br>
+                Afinal, alguns erros só eram percebidos no final do processo, o que exigia a repetição de uma ou mais
+                etapas, gerando retrabalho e diminuindo a eficiência do time envolvido.
+                <br>
+                <br>
+                Para solucionar esses problemas, eles propuseram o desenvolvimento de softwares valorizando quatro
+                pilares:
+                <br>
+                <br>
+                • Indivíduos e interações mais que processos e ferramentas
+                <br>
+                • Software em funcionamento mais que documentação abrangente
+                <br>
+                • Colaboração com o cliente mais que negociação de contratos
+                <br>
+                • Responder a mudanças mais que seguir um plano.
+            </p>
+            <h1 id="titulo">Como Surgiu O Scrum?</h1>
+            <p id="texto">
+                O Scrum foi idealizado por três dos programadores que formularam o Manifesto Ágil: Mike Beedle, Ken
+                Schwaber e Jeff Sutherland.
+                <br>
+                <br>
+                Apesar de seguir os preceitos do Manifesto, a metodologia é anterior a ele, tendo sido criada em 1993.
+                <br>
+                <br>
+                Na época, Sutherland e seus colegas estavam insatisfeitos quanto ao modo com que os processos de
+                produção de software eram conduzidos – no formato cascata – e resolveram buscar alternativas mais
+                eficazes.
+                <br>
+                <br>
+                Eles observaram que, para garantir controle e previsibilidade, as lideranças dedicavam meses à
+                elaboração de planos detalhados, que quase nunca se cumpriam.
+                <br>
+                <br>
+                Isso porque, trabalhando com pessoas, é inevitável haver barreiras que pedem mudanças.
+                <br>
+                <br>
+                Os membros da equipe também podem ter momentos de criatividade, agregando inovação ao projeto inicial.
+                <br>
+                <br>
+                Assim, a saída é verificar periodicamente o andamento do projeto, fazendo as correções e adaptações
+                necessárias rapidamente, com o aval de toda a equipe.
+                <br>
+                <br>
+                A partir de estudos de caso, em especial das boas práticas implementadas na indústria japonesa (Toyota e
+                Honda), os programadores chegaram aos princípios do Scrum.
+                <br>
+                <br>
+                O nome dessa ferramenta veio do universo do Rugby, no qual Scrum corresponde a uma reunião breve, feita
+                antes de os jogadores iniciarem um lance.
+                <br>
+                <br>
+                Da mesma forma, a metodologia Scrum inclui a realização de reuniões rápidas diariamente, a fim de que
+                todos sejam informados sobre o andamento do projeto e os próximos passos.
+                <br>
+                <br>
+                Outra semelhança entre o esporte e a ferramenta de desenvolvimento ágil é a formação de times pequenos,
+                valorizando o trabalho em equipe e a colaboração.
+                <br>
+                <br>
+                Tanto no Rugby quanto nos grupos de Scrum, cada membro da equipe assume um papel específico, porém,
+                todos agem de modo integrado, em prol de um objetivo comum.
+            </p>
+            <h1 id="titulo">Qual O Objetivo Do Scrum?</h1>
+            <p id="texto">
+                Conforme explica Jeff Sutherland no livro Scrum: The Art of Doing Twice the Work in Half the Time
+                (“Scrum: a arte de fazer o dobro do trabalho na metade do tempo”), seu principal objetivo é aumentar a
+                produtividade das equipes.
+                <br>
+                <br>
+                A metodologia permite esse progresso por acolher a incerteza e a criatividade inerentes ao trabalho dos
+                times.
+                <br>
+                <br>
+                Nas palavras de Sutherland, o Scrum:
+                <br>
+                <br>
+                “Cria um alicerce para o aprendizado, permitindo que as equipes avaliem o que já criaram, o que é
+                igualmente importante. A estrutura do Scrum procura aproveitar a maneira como as equipes de fato
+                trabalham, fornecendo ferramentas para se auto-organizarem e otimizarem, em pouco tempo, a rapidez e a
+                qualidade do trabalho”.
+            </p>
+            <h1 id="titulo">Onde O Scrum É Aplicável?</h1>
+            <p id="texto">
+                Como explicamos acima, o Scrum foi pensado para o desenvolvimento de softwares, ou seja, voltado para
+                atender à demanda por produtividade na área de tecnologia da informação (TI).
+                <br>
+                <br>
+                Porém, a metodologia teve inspiração nas melhores práticas implantadas na indústria japonesa, a exemplo
+                do sistema Toyota de produção.
+                <br>
+                <br>
+                Esse método visa diminuir o desperdício e aumentar a qualidade do produto – assim como o Scrum.
+                <br>
+                <br>
+                Então, valores que nortearam a criação da metodologia ágil já vinham sendo aplicados, com sucesso, na
+                indústria automobilística do Japão.
+                <br>
+                <br>
+                Assim, durante as décadas de 1990 e 2000, Jeff Sutherland facilitou a implementação do Scrum em outros
+                tipos de negócio, seja para criar um produto ou otimizar informações.
+                <br>
+                <br>
+                Um exemplo foi a atualização dos bancos de dados do FBI (Federal Bureau of Investigation), a fim de que
+                se tornassem mais acessíveis, práticos e eficientes.
+                <br>
+                <br>
+                Após duas décadas de aplicação da metodologia, seu criador conclui que ela funciona para a gestão de
+                qualquer departamento ou projeto complexo, sendo aplicável a todos os segmentos do mercado.
+            </p>
+            <h1 id="titulo">Vantagens Da Aplicação Do Scrum</h1>
+            <p id="texto">
+                Implantar o Scrum em uma empresa, departamento ou projeto torna os processos mais eficientes, o que
+                representa diversas vantagens.
+                <br>
+                <br>
+                Abaixo, listamos algumas delas:
+                <br>
+                <br>
+                • Simplifica o desenvolvimento de produtos complexos
+                <br>
+                • Cria um ambiente que favorece a colaboração
+                <br>
+                • Aumenta o ROI (Retorno sobre Investimento), conforme indica este estudo
+                <br>
+                • Confere agilidade e eficácia aos processos
+                <br>
+                • Proporciona melhoria contínua
+                <br>
+                • Valoriza cada membro dentro da equipe, aumentando sua autoestima, confiança e autonomia
+                <br>
+                • Foca na satisfação do cliente
+                <br>
+                • Estimula a criatividade – um dos ingredientes essenciais para inovar
+                <br>
+                • Reduz o tempo para entrega do produto
+                <br>
+                • Proporciona integração e comprometimento de cada membro da equipe junto ao projeto
+                <br>
+                • Oferece motivação para o time, que acompanha o andamento do projeto todos os dias
+                <br>
+                • Fornece condições para o planejamento constante, corrigindo pequenas falhas rapidamente
+                <br>
+                • Melhora a comunicação entre todos os atores envolvidos no projeto
+                <br>
+                • Reduz custos de produção
+                <br>
+                • Eleva a produtividade do time
+                <br>
+                • Reduz riscos comuns em projetos de desenvolvimento de novos produtos
+                <br>
+                • Diminui a quantidade de reclamações por parte do cliente.
+            </p>
+            <h1 id="titulo">Como Funciona O Scrum?</h1>
+            <p id="texto">
+                A metodologia funciona com base em iterações, que são ciclos de produção e avaliação realizados para
+                aperfeiçoar um item, ainda durante a fase de produção.
+                <br>
+                <br>
+                As iterações – e o Scrum – funcionam de maneira dinâmica, incorporando o conceito de MVP (Minimum Viable
+                Product, ou Mínimo Produto Viável, numa tradução livre).
+                <br>
+                <br>
+                Isso significa que, ao final de cada iteração, a equipe entrega a versão mais simples do produto final,
+                a partir do menor esforço possível, que será apresentada ao cliente.
+                <br>
+                <br>
+                Com o MVP em mãos, o cliente dá um feedback, aprovando ou solicitando melhorias.
+                <br>
+                <br>
+                No Scrum, cada iteração recebe o nome de Sprint e costuma durar entre duas e quatro semanas, mas esse
+                período pode ser maior ou menor, caso o time decida.
+                <br>
+                <br>
+                Antes de começar um Sprint, a equipe faz a Sprint Planning Meeting, uma reunião de planejamento junto ao
+                representante do cliente – o Product Owner.
+                <br>
+                <br>
+                Nesse encontro, são definidas tarefas, responsáveis, métodos e tempo de projeto. As atividades formam
+                uma lista chamada Product Backlog.
+                <br>
+                <br>
+                Em seguida, começa a etapa de realização do Sprint, quando cada membro desempenha suas funções e
+                acompanha o status do projeto através de Daily Scrum, que são reuniões rápidas diárias.
+                <br>
+                <br>
+                Também é possível controlar o projeto observando o Sprint Burndown, um gráfico que mostra o progresso
+                das tarefas em função do tempo predeterminado para a conclusão do Sprint.
+                <br>
+                <br>
+                Após encerrar o Sprint, o time conduz a Sprint Review Meeting (Reunião de Revisão) para revelar o
+                produto gerado, e a Sprint Retrospective, um encontro que foca nas lições aprendidas.
+                <br>
+                <br>
+                Confira, a seguir, detalhes sobre as pessoas envolvidas no Scrum e os ritos que integram a metodologia.
+                <br>
+                <br>
+                Pessoas:
+                <br>
+                <br>
+                De forma simplificada, cada Sprint exige a participação de, pelo menos, três profissionais: um para
+                representar o cliente, outro para gerenciar e facilitar as tarefas e mais um para desenvolver o projeto.
+                <br>
+                <br>
+                Abaixo, saiba mais sobre eles.
+                <br>
+                <br>
+                • Product Owner
+                <br>
+                Atuando como dono do produto, esse profissional conhece aquilo que o cliente espera como resultado,
+                sendo responsável pela definição dos recursos e passos para alcançar esse objetivo.
+                <br>
+                <br>
+                O Product Owner é um representante do cliente e, portanto, tem a capacidade de orientar o time e
+                controlar a lista de tarefas (Product Backlog).
+                <br>
+                <br>
+                • Scrum Master
+                <br>
+                É um líder orientado à metodologia ágil, o que significa ter um papel de facilitador dentro da equipe.
+                <br>
+                <br>
+                Em vez de fazer a gestão por meio de cobranças e exigências, o Scrum Master se informa sobre as
+                dificuldades e age para que sejam contornadas da melhor maneira possível.
+                <br>
+                <br>
+                Também tem a função de disseminar as boas práticas do Scrum junto ao time, garantindo a realização dos
+                ritos com eficiência e qualidade.
+                <br>
+                <br>
+                Contar com um Scrum Master capacitado é fundamental para o sucesso de qualquer Sprint, em especial nas
+                empresas ou equipes que ainda não estejam familiarizadas com metodologias ágeis.
+                <br>
+                <br>
+                • Scrum Team
+                <br>
+                Consiste no time que vai desenvolver o projeto.
+                <br>
+                <br>
+                De acordo com os valores adotados pelo Scrum, cada membro da equipe tem autonomia para definir ou
+                redefinir atividades, além de corrigir falhas.
+                <br>
+                <br>
+                Para isso, todos realizam suas tarefas com transparência, informando diariamente o status de seu
+                trabalho durante o Daily Scrum.
+                <br>
+                <br>
+                A ideia não é que prestem contas do que fizeram, e, sim, que mantenham canais de diálogo com os colegas,
+                tomando ciência de que são todos, igualmente, responsáveis pelo Sprint.
+                <br>
+                <br>
+                Processos E Ritos:
+                <br>
+                No total, a utilização do Scrum inclui sete diferentes ritos, que comentamos neste tópico.
+                <br>
+                <br>
+                No começo, os nomes podem gerar alguma confusão, mas, com o tempo, a equipe se acostuma e segue as
+                rotinas com facilidade.
+                <br>
+                <br>
+                • Daily Scrum
+                <br>
+                Para que o projeto siga com agilidade, é necessário que cada componente do time se mantenha informado
+                sobre seu andamento.
+                <br>
+                <br>
+                Por isso, a metodologia Scrum pede a realização de reuniões diárias: as Daily Scrum ou Stand Up Meeting.
+                <br>
+                <br>
+                Durante esses encontros, que costumam ser feitos de pé e durar até 15 minutos, cada profissional
+                responde a três questões a respeito de suas tarefas:
+                <br>
+                <br>
+                Quais foram feitas ontem?
+                <br>
+                Quais serão executadas hoje?
+                <br>
+                Existem barreiras para que sejam realizadas?
+                <br>
+                Assim, todo o time sabe em que ponto se encontra o Sprint e pode agir diariamente para que os prazos
+                sejam cumpridos.
+                <br>
+                <br>
+                • Sprints
+                <br>
+                São os ciclos de iteração do Scrum para o desenvolvimento de produtos complexos.
+                <br>
+                <br>
+                Uma vez que a ideia é completar o processo com a menor quantidade de recursos e tempo, os Sprints
+                costumam durar poucas semanas.
+                <br>
+                <br>
+                • Product Backlog Ou Sprint Backlog
+                <br>
+                É uma ferramenta que permite a organização das tarefas durante o Sprint, elencando-as em uma lista
+                interativa.
+                <br>
+                <br>
+                Sua primeira versão costuma ser elaborada pelo Product Owner e, em seguida, pode ser atualizada por
+                qualquer integrante do time.
+                <br>
+                <br>
+                • Sprint Review Meeting
+                <br>
+                Consiste em uma reunião de avaliação final, servindo para fechar cada Sprint.
+                <br>
+                <br>
+                Na Sprint Review, a equipe verifica se o objetivo do processo foi atingido e apresenta o produto
+                construído.
+                <br>
+                <br>
+                • Sprint Planning Meeting
+                <br>
+                Corresponde ao encontro em que um Sprint é planejado, quando é definido o time responsável, a função de
+                seus componentes e quais tarefas serão executadas.
+                <br>
+                <br>
+                A Sprint Planning Meeting não deve ser extensa, durando apenas o tempo necessário para a elaboração de
+                um plano inicial.
+                <br>
+                <br>
+                Esse plano será avaliado e ajustado nas reuniões diárias (Daily Scrum).
+                <br>
+                <br>
+                • Sprint Retrospective
+                <br>
+                Realizada logo depois do encerramento do Sprint, essa reunião de revisão tem o propósito de disseminar o
+                aprendizado durante o processo, compartilhado por todos os membros do time.
+                <br>
+                <br>
+                Contempla, ainda, uma avaliação rápida sobre os erros e acertos, sendo estratégica para a melhoria
+                contínua da equipe, produto e processo.
+                <br>
+                <br>
+                • Sprint Burndown Ou Release Burndown
+                <br>
+                É um gráfico que serve para tornar a comunicação mais visual e dar clareza sobre o status do projeto.
+                <br>
+                <br>
+                O Sprint Burndown costuma ser formado, inicialmente, por duas linhas: uma horizontal e uma vertical.
+                <br>
+                <br>
+                A horizontal mostra o tempo, enquanto a vertical ilustra a quantidade de trabalho a ser feita.
+                <br>
+                <br>
+                Ou seja, o objetivo é que a linha representando o projeto desça cada vez mais, até alcançar o eixo
+                horizontal, evidenciando a conclusão das tarefas.
+            </p>
+            <h1 id="titulo">Outras Metodologias Ágeis</h1>
+            <p id="texto">
+                Agora que já conhece o Scrum, que tal saber mais sobre outras estruturas que auxiliam na implementação
+                do desenvolvimento ágil?
+                <br>
+                <br>
+                Elas podem, inclusive, ser aplicadas junto ao Scrum para simplificar os processos.
+                <br>
+                <br>
+                • Kanban
+                <br>
+                Criado pela Toyota, Kanban é um sistema que permite a divisão e visualização rápida de tarefas, por meio
+                de cartões coloridos e colunas.
+                <br>
+                <br>
+                No começo, a ferramenta era mais utilizada para o setor de produção das empresas.
+                <br>
+                <br>
+                Porém, atualmente, ela vem sendo empregada em diferentes departamentos, sob o formato de três colunas.
+                <br>
+                <br>
+                Na primeira, são inseridas as tarefas a fazer.
+                <br>
+                <br>
+                Na segunda, as que se encontram em andamento
+                <br>
+                <br>
+                Já na terceira, aquilo que já foi feito.
+                <br>
+                <br>
+                Quando utilizado junto ao Scrum, o Kanban auxilia no acompanhamento dos Sprints.
+                <br>
+                <br>
+                • Extreme Programming (XP)
+                <br>
+                Como o nome sugere, a Programação Extrema é destinada, basicamente, ao desenvolvimento de softwares.
+                <br>
+                <br>
+                Ela parte de uma dinâmica em que todos os programadores podem editar o código do projeto, focando em
+                testes e no feedback constante entre os membros da equipe.
+                <br>
+                <br>
+                • Dynamic Systems Development Method (DSDM)
+                <br>
+                A metodologia de desenvolvimento de sistemas dinâmicos é empregada na construção de softwares com
+                orçamento e cronograma limitados.
+                <br>
+                <br>
+                Dentre suas principais características estão o controle do processo e o envolvimento do usuário, que
+                trabalha lado a lado com os programadores para validar o produto.
+            </p>
+            <h1 id="titulo">Conclusão</h1>
+            <p id="texto">
+                Scrum é uma das metodologias ágeis mais popularmente empregadas nas organizações, pois se trata de uma
+                ferramenta democrática.
+                <br>
+                <br>
+                Apostar em seus princípios cria uma sucessão de boas práticas e acompanhamento dos processos de
+                construção de produtos complexos, que são bem delineados através dos Sprints.
+            </p>
+        </div>
+    </main>
+    <div class="rodape">
+        <div class="links">
+            <a id="referencia" href="https://fia.com.br/blog/scrum/">Fonte de referência</a>
+            <a id="curso" href="https://www.stackx.com.br/full-stack">Clique aqui para se tornar um Dev FullStack</a>
+        </div>
+        <p id="box-data">
+            <span id="icon-clock" class="material-symbols-outlined">schedule</span>
+            <span id="data"></span>
+            <span id="icon-check" class="material-symbols-outlined">check</span>
+            <span><span id="visualizacoes" style="color: var(--cor-azul-escuro);"></span> views</span>
+        </p>
+    </div>
+    <footer class="footer-principal">
+        <p>Desenvolvido por Vitor Bitencourt Falasca</p>
+    </footer>
+</body>
+
+</html>

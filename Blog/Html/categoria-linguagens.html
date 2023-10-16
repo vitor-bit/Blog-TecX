@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Blog/Styles/pagina-inicial.css" media="screen" />
+    <script type="text/javascript" src="/Blog/JavaScript/pagina-inicial.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&family=Nunito:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="shortcut icon" href="/Img/logolaranja.png" />
+    <title>BlogTecX</title>
+</head>
+
+<body>
+    <header class="header-principal">
+        <img id="imagem-blog" src="/Img/logo-blog.png" width="220rem">
+        <div class="buttons">
+            <button id="button-sobre" onclick="redirecionarSobreMim()">Sobre mim</button>
+            <div id="menu-categorias" class="menu-categorias">
+                <button id="button-categorias" onclick="abrirMenu()">Categorias</button>
+                <ul id="categorias">
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="postagens">
+        <section class="java" onclick="redirecionarCards('java')">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <header class="header-ja">
+                <img id="imagem-ja" src="/Img/JAVA LOGO.png" alt="imagem-ja" width="62rem">
+                <h1 id="titulo-ja">Java</h1>
+            </header>
+            <main class="main-ja">
+                <p id="texto-ja">
+                    <span id="icon-lampada-ja" class="material-symbols-outlined">info</span>
+                    Java é uma linguagem de programação orientada a objetos e uma plataforma de software amplamente
+                    utilizada que roda em bilhões de dispositivos, incluindo notebooks, dispositivos móveis, consoles de
+                    jogos...
+                </p>
+                <p id="box-data-ja">
+                    <span id="icon-clock-ja" class="material-symbols-outlined">schedule</span>
+                    <span id="data-ja"></span>
+                    <span id="icon-check-ja" class="material-symbols-outlined">check</span>
+                    <span ><span id="visualizacoes-ja" style="color: var(--cor-azul-escuro);"></span>
+                        views</span>
+                </p>
+            </main>
+            <footer class="footer-ja">
+                <p id="categoria-ja">Linguagens</p>
+            </footer>
+            <a id="ver-mais" href="#">Ver mais sobre Java</a>
+        </section>
+        <section class="java-script" onclick="redirecionarCards('java-script')">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <header class="header-js">
+                <img id="imagem-js" src="/Img/JavaScript-logo.png" alt="imagem-js" width="60rem">
+                <h1 id="titulo-js">Java Script</h1>
+            </header>
+            <main class="main-js">
+                <p id="texto-js">
+                    <span id="icon-lampada-js" class="material-symbols-outlined">info</span>
+                    JavaScript é uma linguagem de programação de alto nível criada, a princípio, para ser executada em
+                    navegadores e manipular comportamentos de páginas web. Segundo a Mozilla Foundation, atual nome da
+                    antiga...
+                </p>
+                <p id="box-data-js">
+                    <span id="icon-clock-js" class="material-symbols-outlined">schedule</span>
+                    <span id="data-js"></span>
+                    <span id="icon-check-js" class="material-symbols-outlined">check</span>
+                    <span ><span id="visualizacoes-js" style="color: var(--cor-azul-escuro);"></span> views</span>
+
+                </p>
+            </main>
+            <footer class="footer-js">
+                <p id="categoria-js">Linguagens</p>
+            </footer>
+        </section>
+        <section class="python" onclick="redirecionarCards('python')">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <header class="header-py">
+                <img id="imagem-py" src="/Img/python-logo-transparent-7.png" alt="imagem-py" width="60rem">
+                <h1 id="titulo-py">Python</h1>
+            </header>
+            <main class="main-py">
+                <p id="texto-py">
+                    <span id="icon-lampada-py" class="material-symbols-outlined">info</span>
+                    Python é uma linguagem de programação extremamente popular e versátil, conhecida por sua
+                    simplicidade e
+                    legibilidade. Ela permite que desenvolvedores criem uma variedade de aplicações, desde programas
+                    simples...
+                </p>
+                <p id="box-data-py">
+                    <span id="icon-clock-py" class="material-symbols-outlined">schedule</span>
+                    <span id="data-py"></span>
+                    <span id="icon-check-py" class="material-symbols-outlined">check</span>
+                    <span ><span id="visualizacoes-py" style="color: var(--cor-azul-escuro);"></span> views</span>
+
+                </p>
+            </main>
+            <footer class="footer-py">
+                <p id="categoria-py">Linguagens</p>
+            </footer>
+        </section>
+    </div>
+    <footer class="footer-principal">
+        <p>Desenvolvido por Vitor Bitencourt Falasca</p>
+    </footer>
+</body>
+
+</html>

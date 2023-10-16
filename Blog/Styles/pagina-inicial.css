@@ -1,0 +1,1941 @@
+:root {
+    --font-titulos: 'Martian Mono', monospace;
+    --font-textos: 'Nunito', sans-serif;
+    --cor-azul-claro: #ffd84c;
+    --cinza-medio: #dedbdb;
+    --cinza-escuro: #595959;
+    --cor-azul-escuro: #ff7438;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+}
+
+@media (max-width: 480px) {
+    .header-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+        background-color: black;
+    }
+
+    #imagem-blog{
+        width: 10rem;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    #button-sobre,
+    #button-categorias {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        background-color: var(--cor-azul-escuro);
+        border-radius: 0.2rem;
+        border: none;
+        box-shadow: 0 0 0.31rem var(--cor-azul-claro),
+        0 0 1.56rem var(--cor-azul-claro);
+        font-family: var(--font-textos);
+        font-size: 0.6rem;
+        font-weight: 600;
+        padding: 0.5rem;
+    }
+    
+    #button-sobre:hover,
+    #button-categorias:hover {
+        transition: 0.2s;
+        box-shadow: 0 0 0.31rem var(--cor-azul-claro),
+        0 0 1.56rem var(--cor-azul-claro), 0 0 3.12rem var(--cor-azul-claro),
+        0 0 6.25rem var(--cor-azul-claro), 0 0 12.5rem var(--cor-azul-claro);
+    }
+
+    #button-sobre:active,
+    #button-categorias:active {
+        color: white;
+    }
+
+    #categorias li {
+        margin: 0.5rem;
+        color: var(--cor-azul-escuro);
+        font-family: var(--font-textos);
+        font-weight: 600;
+        font-size: 0.6rem;
+    }
+
+    #categorias li:hover {
+        color: white;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .postagens {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 60%;
+        margin-bottom: 30%;
+    }
+
+    .java-script,
+    .java,
+    .python,
+    .angular,
+    .react,
+    .scrum,
+    .kanban {
+        width: 12.8rem;
+        height: 15rem;
+        margin: 2rem;
+        position: relative;
+        border-radius: 0.2rem;
+        overflow: hidden;
+    } 
+
+    
+
+
+    .java-script:hover,
+    .java:hover,
+    .python:hover,
+    .angular:hover,
+    .react:hover,
+    .scrum:hover,
+    .kanban:hover {
+        filter: blur(0.1rem);
+        cursor: pointer;
+        
+    }
+
+    
+    .java:hover #ver-mais{
+        top: 0;
+        transition: 1s;
+        
+    }
+
+    .java-script> #span1,
+    .java> #span1,
+    .python> #span1,
+    .angular> #span1,
+    .react> #span1,
+    .scrum> #span1,
+    .kanban > #span1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, transparent, var(--cor-azul-escuro));
+        width: 100%;
+        height: 0.1rem;
+        animation: animar-span1 2s linear infinite;
+        border-radius: 1rem;
+    }
+
+    @keyframes animar-span1{
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+        
+    }
+
+    .java-script > #span2,
+    .java > #span2,
+    .python > #span2,
+    .angular > #span2,
+    .react > #span2,
+    .scrum > #span2,
+    .kanban > #span2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: linear-gradient(to bottom, transparent, var(--cor-azul-escuro));
+        width: 0.1rem;
+        height: 100%;
+        animation: animar-span2 2s linear infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes animar-span2{
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+    }
+
+    .java-script > #span3,
+    .java > #span3,
+    .python > #span3,
+    .angular > #span3,
+    .react > #span3,
+    .scrum > #span3,
+    .kanban > #span3{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to left, transparent, var(--cor-azul-escuro));
+        width: 100%;
+        height: 0.1rem;
+        animation: animar-span3 2s linear infinite;
+    }
+
+    @keyframes animar-span3{
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+
+    .java-script > #span4,
+    .java > #span4,
+    .python > #span4,
+    .angular > #span4,
+    .react > #span4,
+    .scrum > #span4,
+    .kanban > #span4{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to top, transparent, var(--cor-azul-escuro));
+        width: 0.1rem;
+        height: 100%;
+        animation: animar-span4 2s linear infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes animar-span4{
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(-100%);
+        }
+    }
+
+    
+    .header-js,
+    .header-ja,
+    .header-py,
+    .header-an,
+    .header-re,
+    .header-sc,
+    .header-ka {
+        display: flex;
+        align-items: center;
+        height: 3.5rem;
+        padding: 1rem;
+    }
+
+    #ver-mais{
+        top: 20rem;
+        position: relative;
+    }
+    
+
+    #imagem-js,
+    #imagem-ja,
+    #imagem-py,
+    #imagem-an,
+    #imagem-re,
+    #imagem-sc,
+    #imagem-ka {
+        width: 2.5rem;
+        border-radius: 2rem;
+        margin-right: 1rem;
+    }
+
+
+    #titulo-js,
+    #titulo-ja,
+    #titulo-py,
+    #titulo-an,
+    #titulo-re,
+    #titulo-sc,
+    #titulo-ka {
+        font-family: var(--font-titulos);
+        font-size: 0.7rem;
+        color: var(--cor-azul-escuro);
+        font-weight: 700;
+    }
+
+    #icon-lampada-js,
+    #icon-lampada-ja,
+    #icon-lampada-py,
+    #icon-lampada-an,
+    #icon-lampada-re,
+    #icon-lampada-sc,
+    #icon-lampada-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 0.8rem;
+        margin-right: 0.2rem;
+
+    }
+
+    #texto-js,
+    #texto-ja,
+    #texto-py,
+    #texto-an,
+    #texto-re,
+    #texto-sc,
+    #texto-ka {
+        display: flex;
+        font-family: var(--font-textos);
+        color: var(--cinza-medio);
+        font-weight: 500;
+        margin: 1rem 1rem 1rem 1rem;
+        font-size: 0.6rem;
+    }
+
+    #box-data-js,
+    #box-data-ja,
+    #box-data-py,
+    #box-data-an,
+    #box-data-re,
+    #box-data-sc,
+    #box-data-ka {
+        display: flex;
+        align-items: center;
+        font-family: var(--font-textos);
+        font-weight: 500;
+        margin: 0rem 1rem 1rem 1rem;
+        font-size: 0.5rem;
+        color: var(--cinza-medio);
+    }
+
+    #data-js,
+    #visualizacoes-js,
+    #data-ja,
+    #visualizacoes-ja,
+    #data-py,
+    #visualizacoes-py,
+    #data-an,
+    #visualizacoes-an,
+    #data-re,
+    #visualizacoes-re,
+    #data-sc,
+    #visualizacoes-sc,
+    #data-ka,
+    #visualizacoes-ka {
+        margin-left: 0.2rem;
+    }
+
+    #icon-check-js,
+    #icon-check-ja,
+    #icon-check-py,
+    #icon-check-an,
+    #icon-check-re,
+    #icon-check-sc,
+    #icon-check-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 0.8rem;
+        margin-left: 2.5rem;
+    }
+
+    #icon-clock-js,
+    #icon-clock-ja,
+    #icon-clock-py,
+    #icon-clock-an,
+    #icon-clock-re,
+    #icon-clock-sc,
+    #icon-clock-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 0.8rem;
+    }
+
+    .footer-js,
+    .footer-ja,
+    .footer-py,
+    .footer-an,
+    .footer-re,
+    .footer-sc,
+    .footer-ka {
+        display: flex;
+        justify-content: center;
+        font-family: var(--font-textos);
+        background-color: var(--cinza-escuro);
+        color: var(--cor-azul-escuro);
+        font-weight: 600;
+        font-size: 0.6rem;
+        padding: 0.3rem;
+        margin: 0rem 1rem 0.5rem 1rem;
+        border-radius: 1rem;
+
+    }
+
+    .footer-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-azul-escuro);
+        position: fixed;
+        bottom: 0;
+        border-radius: 0.2rem;
+    }
+
+    .footer-principal>p {
+        color: var(--cinza-escuro);
+        padding: 0.8rem;
+        font-size: 0.6rem;
+        font-weight: 700;
+        font-family: var(--font-textos);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .header-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+        background-color: black;
+    }
+
+    #imagem-blog{
+        width: 10rem;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    #button-sobre,
+    #button-categorias {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        background-color: var(--cor-azul-escuro);
+        border-radius: 0.2rem;
+        border: none;
+        box-shadow: 0 0 0.31rem var(--cor-azul-claro),
+        0 0 1.56rem var(--cor-azul-claro);
+        font-family: var(--font-textos);
+        font-size: 0.6rem;
+        font-weight: 600;
+        padding: 0.5rem;
+    }
+    
+    #button-sobre:hover,
+    #button-categorias:hover {
+        transition: 0.2s;
+        box-shadow: 0 0 0.31rem var(--cor-azul-claro),
+        0 0 1.56rem var(--cor-azul-claro), 0 0 3.12rem var(--cor-azul-claro),
+        0 0 6.25rem var(--cor-azul-claro), 0 0 12.5rem var(--cor-azul-claro);
+    }
+
+    #button-sobre:active,
+    #button-categorias:active {
+        color: white;
+    }
+
+    #categorias li {
+        margin: 0.5rem;
+        color: var(--cor-azul-escuro);
+        font-family: var(--font-textos);
+        font-weight: 600;
+        font-size: 0.6rem;
+    }
+
+    #categorias li:hover {
+        color: white;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .postagens {
+        display: grid;
+        grid-template-columns: 15rem 15rem;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 35%;
+        margin-bottom: 25%;
+    }
+
+    .java-script,
+    .java,
+    .python,
+    .angular,
+    .react,
+    .scrum,
+    .kanban {
+        width: 12.8rem;
+        height: 15rem;
+        margin: 2rem 1rem 2rem 1rem;
+        position: relative;
+        border-radius: 0.2rem;
+        overflow: hidden;
+    } 
+    
+    .java-script:hover,
+    .java:hover,
+    .python:hover,
+    .angular:hover,
+    .react:hover,
+    .scrum:hover,
+    .kanban:hover {
+        filter: blur(0.1rem);
+        cursor: pointer;
+        
+    }
+
+    
+    .java:hover #ver-mais{
+        top: 0;
+        transition: 1s;
+        
+    }
+
+    .java-script> #span1,
+    .java> #span1,
+    .python> #span1,
+    .angular> #span1,
+    .react> #span1,
+    .scrum> #span1,
+    .kanban > #span1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, transparent, var(--cor-azul-escuro));
+        width: 100%;
+        height: 0.1rem;
+        animation: animar-span1 2s linear infinite;
+        border-radius: 1rem;
+    }
+
+    @keyframes animar-span1{
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+        
+    }
+
+    .java-script > #span2,
+    .java > #span2,
+    .python > #span2,
+    .angular > #span2,
+    .react > #span2,
+    .scrum > #span2,
+    .kanban > #span2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: linear-gradient(to bottom, transparent, var(--cor-azul-escuro));
+        width: 0.1rem;
+        height: 100%;
+        animation: animar-span2 2s linear infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes animar-span2{
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+    }
+
+    .java-script > #span3,
+    .java > #span3,
+    .python > #span3,
+    .angular > #span3,
+    .react > #span3,
+    .scrum > #span3,
+    .kanban > #span3{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to left, transparent, var(--cor-azul-escuro));
+        width: 100%;
+        height: 0.1rem;
+        animation: animar-span3 2s linear infinite;
+    }
+
+    @keyframes animar-span3{
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+
+    .java-script > #span4,
+    .java > #span4,
+    .python > #span4,
+    .angular > #span4,
+    .react > #span4,
+    .scrum > #span4,
+    .kanban > #span4{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to top, transparent, var(--cor-azul-escuro));
+        width: 0.1rem;
+        height: 100%;
+        animation: animar-span4 2s linear infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes animar-span4{
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(-100%);
+        }
+    }
+
+    
+    .header-js,
+    .header-ja,
+    .header-py,
+    .header-an,
+    .header-re,
+    .header-sc,
+    .header-ka {
+        display: flex;
+        align-items: center;
+        height: 3.5rem;
+        padding: 1rem;
+    }
+
+    #ver-mais{
+        top: 20rem;
+        position: relative;
+    }
+    
+
+    #imagem-js,
+    #imagem-ja,
+    #imagem-py,
+    #imagem-an,
+    #imagem-re,
+    #imagem-sc,
+    #imagem-ka {
+        width: 2.5rem;
+        border-radius: 2rem;
+        margin-right: 1rem;
+    }
+
+
+    #titulo-js,
+    #titulo-ja,
+    #titulo-py,
+    #titulo-an,
+    #titulo-re,
+    #titulo-sc,
+    #titulo-ka {
+        font-family: var(--font-titulos);
+        font-size: 0.7rem;
+        color: var(--cor-azul-escuro);
+        font-weight: 700;
+    }
+
+    #icon-lampada-js,
+    #icon-lampada-ja,
+    #icon-lampada-py,
+    #icon-lampada-an,
+    #icon-lampada-re,
+    #icon-lampada-sc,
+    #icon-lampada-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 0.8rem;
+        margin-right: 0.2rem;
+
+    }
+
+    #texto-js,
+    #texto-ja,
+    #texto-py,
+    #texto-an,
+    #texto-re,
+    #texto-sc,
+    #texto-ka {
+        display: flex;
+        font-family: var(--font-textos);
+        color: var(--cinza-medio);
+        font-weight: 500;
+        margin: 1rem 1rem 1rem 1rem;
+        font-size: 0.6rem;
+    }
+
+    #box-data-js,
+    #box-data-ja,
+    #box-data-py,
+    #box-data-an,
+    #box-data-re,
+    #box-data-sc,
+    #box-data-ka {
+        display: flex;
+        align-items: center;
+        font-family: var(--font-textos);
+        font-weight: 500;
+        margin: 0rem 1rem 1rem 1rem;
+        font-size: 0.5rem;
+        color: var(--cinza-medio);
+    }
+
+    #data-js,
+    #visualizacoes-js,
+    #data-ja,
+    #visualizacoes-ja,
+    #data-py,
+    #visualizacoes-py,
+    #data-an,
+    #visualizacoes-an,
+    #data-re,
+    #visualizacoes-re,
+    #data-sc,
+    #visualizacoes-sc,
+    #data-ka,
+    #visualizacoes-ka {
+        margin-left: 0.2rem;
+    }
+
+    #icon-check-js,
+    #icon-check-ja,
+    #icon-check-py,
+    #icon-check-an,
+    #icon-check-re,
+    #icon-check-sc,
+    #icon-check-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 0.8rem;
+        margin-left: 2.5rem;
+    }
+
+    #icon-clock-js,
+    #icon-clock-ja,
+    #icon-clock-py,
+    #icon-clock-an,
+    #icon-clock-re,
+    #icon-clock-sc,
+    #icon-clock-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 0.8rem;
+    }
+
+    .footer-js,
+    .footer-ja,
+    .footer-py,
+    .footer-an,
+    .footer-re,
+    .footer-sc,
+    .footer-ka {
+        display: flex;
+        justify-content: center;
+        font-family: var(--font-textos);
+        background-color: var(--cinza-escuro);
+        color: var(--cor-azul-escuro);
+        font-weight: 600;
+        font-size: 0.6rem;
+        padding: 0.3rem;
+        margin: 0rem 1rem 0.5rem 1rem;
+        border-radius: 1rem;
+
+    }
+
+    .footer-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-azul-escuro);
+        position: fixed;
+        bottom: 0;
+        border-radius: 0.2rem;
+    }
+
+    .footer-principal>p {
+        color: var(--cinza-escuro);
+        padding: 1rem;
+        font-size: 0.6rem;
+        font-weight: 700;
+        font-family: var(--font-textos);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+        background-color: black;
+    }
+
+    #imagem-blog{
+        width: 12rem;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    #button-sobre,
+    #button-categorias {
+        margin-right: 0.8rem;
+        margin-left: 0.8rem;
+        background-color: var(--cor-azul-escuro);
+        border-radius: 0.2rem;
+        border: none;
+        box-shadow: 0 0 0.31rem var(--cor-azul-claro),
+        0 0 1.56rem var(--cor-azul-claro);
+        font-family: var(--font-textos);
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 0.5rem;
+    }
+    
+    #button-sobre:hover,
+    #button-categorias:hover {
+        transition: 0.2s;
+        box-shadow: 0 0 0.31rem var(--cor-azul-claro),
+        0 0 1.56rem var(--cor-azul-claro), 0 0 3.12rem var(--cor-azul-claro),
+        0 0 6.25rem var(--cor-azul-claro), 0 0 12.5rem var(--cor-azul-claro);
+    }
+
+    #button-sobre:active,
+    #button-categorias:active {
+        color: white;
+    }
+
+    #categorias li {
+        margin: 0.5rem;
+        color: var(--cor-azul-escuro);
+        font-family: var(--font-textos);
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+
+    #categorias li:hover {
+        color: white;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .postagens {
+        display: grid;
+        grid-template-columns: 15rem 15rem 15rem;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 32%;
+        margin-bottom: 16%;
+    }
+
+    .java-script,
+    .java,
+    .python,
+    .angular,
+    .react,
+    .scrum,
+    .kanban {
+        width: 13rem;
+        height: 17.5rem;
+        margin: 2rem 1rem 2rem 1rem;
+        position: relative;
+        border-radius: 0.2rem;
+        overflow: hidden;
+    } 
+    
+    .java-script:hover,
+    .java:hover,
+    .python:hover,
+    .angular:hover,
+    .react:hover,
+    .scrum:hover,
+    .kanban:hover {
+        filter: blur(0.1rem);
+        cursor: pointer;
+        
+    }
+
+    
+    .java:hover #ver-mais{
+        top: 0;
+        transition: 1s;
+        
+    }
+
+    .java-script> #span1,
+    .java> #span1,
+    .python> #span1,
+    .angular> #span1,
+    .react> #span1,
+    .scrum> #span1,
+    .kanban > #span1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, transparent, var(--cor-azul-escuro));
+        width: 100%;
+        height: 0.1rem;
+        animation: animar-span1 2s linear infinite;
+        border-radius: 1rem;
+    }
+
+    @keyframes animar-span1{
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+        
+    }
+
+    .java-script > #span2,
+    .java > #span2,
+    .python > #span2,
+    .angular > #span2,
+    .react > #span2,
+    .scrum > #span2,
+    .kanban > #span2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: linear-gradient(to bottom, transparent, var(--cor-azul-escuro));
+        width: 0.1rem;
+        height: 100%;
+        animation: animar-span2 2s linear infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes animar-span2{
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+    }
+
+    .java-script > #span3,
+    .java > #span3,
+    .python > #span3,
+    .angular > #span3,
+    .react > #span3,
+    .scrum > #span3,
+    .kanban > #span3{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to left, transparent, var(--cor-azul-escuro));
+        width: 100%;
+        height: 0.1rem;
+        animation: animar-span3 2s linear infinite;
+    }
+
+    @keyframes animar-span3{
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+
+    .java-script > #span4,
+    .java > #span4,
+    .python > #span4,
+    .angular > #span4,
+    .react > #span4,
+    .scrum > #span4,
+    .kanban > #span4{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to top, transparent, var(--cor-azul-escuro));
+        width: 0.1rem;
+        height: 100%;
+        animation: animar-span4 2s linear infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes animar-span4{
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(-100%);
+        }
+    }
+
+    
+    .header-js,
+    .header-ja,
+    .header-py,
+    .header-an,
+    .header-re,
+    .header-sc,
+    .header-ka {
+        display: flex;
+        align-items: center;
+        height: 4rem;
+        padding: 1rem;
+    }
+
+    #ver-mais{
+        top: 20rem;
+        position: relative;
+    }
+    
+
+    #imagem-js,
+    #imagem-ja,
+    #imagem-py,
+    #imagem-an,
+    #imagem-re,
+    #imagem-sc,
+    #imagem-ka {
+        width: 2.8rem;
+        border-radius: 2rem;
+        margin-right: 1rem;
+    }
+
+
+    #titulo-js,
+    #titulo-ja,
+    #titulo-py,
+    #titulo-an,
+    #titulo-re,
+    #titulo-sc,
+    #titulo-ka {
+        font-family: var(--font-titulos);
+        font-size: 0.8rem;
+        color: var(--cor-azul-escuro);
+        font-weight: 700;
+    }
+
+    #icon-lampada-js,
+    #icon-lampada-ja,
+    #icon-lampada-py,
+    #icon-lampada-an,
+    #icon-lampada-re,
+    #icon-lampada-sc,
+    #icon-lampada-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 0.9rem;
+        margin-right: 0.2rem;
+
+    }
+
+    #texto-js,
+    #texto-ja,
+    #texto-py,
+    #texto-an,
+    #texto-re,
+    #texto-sc,
+    #texto-ka {
+        display: flex;
+        font-family: var(--font-textos);
+        color: var(--cinza-medio);
+        font-weight: 500;
+        margin: 1rem 1rem 1rem 1rem;
+        font-size: 0.7rem;
+    }
+
+    #box-data-js,
+    #box-data-ja,
+    #box-data-py,
+    #box-data-an,
+    #box-data-re,
+    #box-data-sc,
+    #box-data-ka {
+        display: flex;
+        align-items: center;
+        font-family: var(--font-textos);
+        font-weight: 500;
+        margin: 0rem 1rem 1rem 1rem;
+        font-size: 0.6rem;
+        color: var(--cinza-medio);
+    }
+
+    #data-js,
+    #visualizacoes-js,
+    #data-ja,
+    #visualizacoes-ja,
+    #data-py,
+    #visualizacoes-py,
+    #data-an,
+    #visualizacoes-an,
+    #data-re,
+    #visualizacoes-re,
+    #data-sc,
+    #visualizacoes-sc,
+    #data-ka,
+    #visualizacoes-ka {
+        margin-left: 0.2rem;
+    }
+
+    #icon-check-js,
+    #icon-check-ja,
+    #icon-check-py,
+    #icon-check-an,
+    #icon-check-re,
+    #icon-check-sc,
+    #icon-check-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 0.9rem;
+        margin-left: 2.5rem;
+    }
+
+    #icon-clock-js,
+    #icon-clock-ja,
+    #icon-clock-py,
+    #icon-clock-an,
+    #icon-clock-re,
+    #icon-clock-sc,
+    #icon-clock-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 0.9rem;
+    }
+
+    .footer-js,
+    .footer-ja,
+    .footer-py,
+    .footer-an,
+    .footer-re,
+    .footer-sc,
+    .footer-ka {
+        display: flex;
+        justify-content: center;
+        font-family: var(--font-textos);
+        background-color: var(--cinza-escuro);
+        color: var(--cor-azul-escuro);
+        font-weight: 600;
+        font-size: 0.6rem;
+        padding: 0.3rem;
+        margin: 0rem 1rem 0.5rem 1rem;
+        border-radius: 1rem;
+
+    }
+
+    .footer-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-azul-escuro);
+        position: fixed;
+        bottom: 0;
+        border-radius: 0.2rem;
+    }
+
+    .footer-principal>p {
+        color: var(--cinza-escuro);
+        padding: 1rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+        font-family: var(--font-textos);
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .header-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+        background-color: black;
+    }
+
+    #imagem-blog{
+        width: 12rem;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    #button-sobre,
+    #button-categorias {
+        margin-right: 0.8rem;
+        margin-left: 0.8rem;
+        background-color: var(--cor-azul-escuro);
+        border-radius: 0.2rem;
+        border: none;
+        box-shadow: 0 0 0.31rem var(--cor-azul-claro),
+        0 0 1.56rem var(--cor-azul-claro);
+        font-family: var(--font-textos);
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 0.5rem;
+    }
+    
+    #button-sobre:hover,
+    #button-categorias:hover {
+        transition: 0.2s;
+        box-shadow: 0 0 0.31rem var(--cor-azul-claro),
+        0 0 1.56rem var(--cor-azul-claro), 0 0 3.12rem var(--cor-azul-claro),
+        0 0 6.25rem var(--cor-azul-claro), 0 0 12.5rem var(--cor-azul-claro);
+    }
+
+    #button-sobre:active,
+    #button-categorias:active {
+        color: white;
+    }
+
+    #categorias li {
+        margin: 0.5rem;
+        color: var(--cor-azul-escuro);
+        font-family: var(--font-textos);
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+
+    #categorias li:hover {
+        color: white;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .postagens {
+        display: grid;
+        grid-template-columns: 16rem 16rem 16rem;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 25%;
+        margin-bottom: 15%;
+    }
+
+    .java-script,
+    .java,
+    .python,
+    .angular,
+    .react,
+    .scrum,
+    .kanban {
+        width: 13rem;
+        height: 17.5rem;
+        margin: 2rem 2rem 2rem 2rem;
+        position: relative;
+        border-radius: 0.2rem;
+        overflow: hidden;
+    } 
+    
+    .java-script:hover,
+    .java:hover,
+    .python:hover,
+    .angular:hover,
+    .react:hover,
+    .scrum:hover,
+    .kanban:hover {
+        filter: blur(0.1rem);
+        cursor: pointer;
+        
+    }
+
+    
+    .java:hover #ver-mais{
+        top: 0;
+        transition: 1s;
+        
+    }
+
+    .java-script> #span1,
+    .java> #span1,
+    .python> #span1,
+    .angular> #span1,
+    .react> #span1,
+    .scrum> #span1,
+    .kanban > #span1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, transparent, var(--cor-azul-escuro));
+        width: 100%;
+        height: 0.1rem;
+        animation: animar-span1 2s linear infinite;
+        border-radius: 1rem;
+    }
+
+    @keyframes animar-span1{
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+        
+    }
+
+    .java-script > #span2,
+    .java > #span2,
+    .python > #span2,
+    .angular > #span2,
+    .react > #span2,
+    .scrum > #span2,
+    .kanban > #span2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: linear-gradient(to bottom, transparent, var(--cor-azul-escuro));
+        width: 0.1rem;
+        height: 100%;
+        animation: animar-span2 2s linear infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes animar-span2{
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+    }
+
+    .java-script > #span3,
+    .java > #span3,
+    .python > #span3,
+    .angular > #span3,
+    .react > #span3,
+    .scrum > #span3,
+    .kanban > #span3{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to left, transparent, var(--cor-azul-escuro));
+        width: 100%;
+        height: 0.1rem;
+        animation: animar-span3 2s linear infinite;
+    }
+
+    @keyframes animar-span3{
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+
+    .java-script > #span4,
+    .java > #span4,
+    .python > #span4,
+    .angular > #span4,
+    .react > #span4,
+    .scrum > #span4,
+    .kanban > #span4{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to top, transparent, var(--cor-azul-escuro));
+        width: 0.1rem;
+        height: 100%;
+        animation: animar-span4 2s linear infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes animar-span4{
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(-100%);
+        }
+    }
+
+    
+    .header-js,
+    .header-ja,
+    .header-py,
+    .header-an,
+    .header-re,
+    .header-sc,
+    .header-ka {
+        display: flex;
+        align-items: center;
+        height: 4rem;
+        padding: 1rem;
+    }
+
+    #ver-mais{
+        top: 20rem;
+        position: relative;
+    }
+    
+
+    #imagem-js,
+    #imagem-ja,
+    #imagem-py,
+    #imagem-an,
+    #imagem-re,
+    #imagem-sc,
+    #imagem-ka {
+        width: 2.8rem;
+        border-radius: 2rem;
+        margin-right: 1rem;
+    }
+
+
+    #titulo-js,
+    #titulo-ja,
+    #titulo-py,
+    #titulo-an,
+    #titulo-re,
+    #titulo-sc,
+    #titulo-ka {
+        font-family: var(--font-titulos);
+        font-size: 0.8rem;
+        color: var(--cor-azul-escuro);
+        font-weight: 700;
+    }
+
+    #icon-lampada-js,
+    #icon-lampada-ja,
+    #icon-lampada-py,
+    #icon-lampada-an,
+    #icon-lampada-re,
+    #icon-lampada-sc,
+    #icon-lampada-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 0.9rem;
+        margin-right: 0.2rem;
+
+    }
+
+    #texto-js,
+    #texto-ja,
+    #texto-py,
+    #texto-an,
+    #texto-re,
+    #texto-sc,
+    #texto-ka {
+        display: flex;
+        font-family: var(--font-textos);
+        color: var(--cinza-medio);
+        font-weight: 500;
+        margin: 1rem 1rem 1rem 1rem;
+        font-size: 0.7rem;
+    }
+
+    #box-data-js,
+    #box-data-ja,
+    #box-data-py,
+    #box-data-an,
+    #box-data-re,
+    #box-data-sc,
+    #box-data-ka {
+        display: flex;
+        align-items: center;
+        font-family: var(--font-textos);
+        font-weight: 500;
+        margin: 0rem 1rem 1rem 1rem;
+        font-size: 0.6rem;
+        color: var(--cinza-medio);
+    }
+
+    #data-js,
+    #visualizacoes-js,
+    #data-ja,
+    #visualizacoes-ja,
+    #data-py,
+    #visualizacoes-py,
+    #data-an,
+    #visualizacoes-an,
+    #data-re,
+    #visualizacoes-re,
+    #data-sc,
+    #visualizacoes-sc,
+    #data-ka,
+    #visualizacoes-ka {
+        margin-left: 0.2rem;
+    }
+
+    #icon-check-js,
+    #icon-check-ja,
+    #icon-check-py,
+    #icon-check-an,
+    #icon-check-re,
+    #icon-check-sc,
+    #icon-check-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 0.9rem;
+        margin-left: 2.5rem;
+    }
+
+    #icon-clock-js,
+    #icon-clock-ja,
+    #icon-clock-py,
+    #icon-clock-an,
+    #icon-clock-re,
+    #icon-clock-sc,
+    #icon-clock-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 0.9rem;
+    }
+
+    .footer-js,
+    .footer-ja,
+    .footer-py,
+    .footer-an,
+    .footer-re,
+    .footer-sc,
+    .footer-ka {
+        display: flex;
+        justify-content: center;
+        font-family: var(--font-textos);
+        background-color: var(--cinza-escuro);
+        color: var(--cor-azul-escuro);
+        font-weight: 600;
+        font-size: 0.6rem;
+        padding: 0.3rem;
+        margin: 0rem 1rem 0.5rem 1rem;
+        border-radius: 1rem;
+
+    }
+
+    .footer-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-azul-escuro);
+        position: fixed;
+        bottom: 0;
+        border-radius: 0.2rem;
+    }
+
+    .footer-principal>p {
+        color: var(--cinza-escuro);
+        padding: 1rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+        font-family: var(--font-textos);
+    }
+}
+
+@media (min-width: 1201px) {
+    .header-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+        background-color: black;
+    }
+
+    #imagem-blog{
+        width: 17rem;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    #button-sobre,
+    #button-categorias {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        background-color: var(--cor-azul-escuro);
+        border-radius: 0.2rem;
+        border: none;
+        box-shadow: 0 0 0.31rem var(--cor-azul-claro),
+        0 0 1.56rem var(--cor-azul-claro);
+        font-family: var(--font-textos);
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 0.5rem;
+    }
+    
+    #button-sobre:hover,
+    #button-categorias:hover {
+        transition: 0.2s;
+        box-shadow: 0 0 0.31rem var(--cor-azul-claro),
+        0 0 1.56rem var(--cor-azul-claro), 0 0 3.12rem var(--cor-azul-claro),
+        0 0 6.25rem var(--cor-azul-claro), 0 0 12.5rem var(--cor-azul-claro);
+    }
+
+    #button-sobre:active,
+    #button-categorias:active {
+        color: white;
+    }
+
+    #categorias li {
+        margin: 0.5rem;
+        color: var(--cor-azul-escuro);
+        font-family: var(--font-textos);
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    #categorias li:hover {
+        color: white;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .postagens {
+        display: grid;
+        grid-template-columns: 22rem 22rem 22rem;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 25%;
+        margin-bottom: 15%;
+    }
+
+    .java-script,
+    .java,
+    .python,
+    .angular,
+    .react,
+    .scrum,
+    .kanban {
+        width: 16rem;
+        height: 22.8rem;
+        margin: 2rem;
+        position: relative;
+        border-radius: 0.2rem;
+        overflow: hidden;
+    }  
+
+    .java-script:hover,
+    .java:hover,
+    .python:hover,
+    .angular:hover,
+    .react:hover,
+    .scrum:hover,
+    .kanban:hover {
+        filter: blur(0.1rem);
+        cursor: pointer;
+        
+    }
+
+    
+    .java:hover #ver-mais{
+        top: 0;
+        transition: 1s;
+        
+    }
+
+    .java-script> #span1,
+    .java> #span1,
+    .python> #span1,
+    .angular> #span1,
+    .react> #span1,
+    .scrum> #span1,
+    .kanban > #span1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, transparent, var(--cor-azul-escuro));
+        width: 100%;
+        height: 0.2rem;
+        animation: animar-span1 2s linear infinite;
+        border-radius: 1rem;
+    }
+
+    @keyframes animar-span1{
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+        
+    }
+
+    .java-script > #span2,
+    .java > #span2,
+    .python > #span2,
+    .angular > #span2,
+    .react > #span2,
+    .scrum > #span2,
+    .kanban > #span2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: linear-gradient(to bottom, transparent, var(--cor-azul-escuro));
+        width: 0.2rem;
+        height: 100%;
+        animation: animar-span2 2s linear infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes animar-span2{
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+    }
+
+    .java-script > #span3,
+    .java > #span3,
+    .python > #span3,
+    .angular > #span3,
+    .react > #span3,
+    .scrum > #span3,
+    .kanban > #span3{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to left, transparent, var(--cor-azul-escuro));
+        width: 100%;
+        height: 0.2rem;
+        animation: animar-span3 2s linear infinite;
+    }
+
+    @keyframes animar-span3{
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+
+    .java-script > #span4,
+    .java > #span4,
+    .python > #span4,
+    .angular > #span4,
+    .react > #span4,
+    .scrum > #span4,
+    .kanban > #span4{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to top, transparent, var(--cor-azul-escuro));
+        width: 0.2rem;
+        height: 100%;
+        animation: animar-span4 2s linear infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes animar-span4{
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(-100%);
+        }
+    }
+
+    
+    .header-js,
+    .header-ja,
+    .header-py,
+    .header-an,
+    .header-re,
+    .header-sc,
+    .header-ka {
+        display: flex;
+        align-items: center;
+        
+        height: 5.7rem;
+        padding: 1rem;
+    }
+
+    #ver-mais{
+        top: 20rem;
+        position: relative;
+    }
+    
+
+    #imagem-js,
+    #imagem-ja,
+    #imagem-py,
+    #imagem-an,
+    #imagem-re,
+    #imagem-sc,
+    #imagem-ka {
+        width: 4rem;
+        border-radius: 2rem;
+        margin-right: 1rem;
+    }
+
+
+    #titulo-js,
+    #titulo-ja,
+    #titulo-py,
+    #titulo-an,
+    #titulo-re,
+    #titulo-sc,
+    #titulo-ka {
+        font-family: var(--font-titulos);
+        font-size: 1.1rem;
+        color: var(--cor-azul-escuro);
+        font-weight: 700;
+    }
+
+    #icon-lampada-js,
+    #icon-lampada-ja,
+    #icon-lampada-py,
+    #icon-lampada-an,
+    #icon-lampada-re,
+    #icon-lampada-sc,
+    #icon-lampada-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 1.2rem;
+        margin-right: 0.2rem;
+
+    }
+
+    #texto-js,
+    #texto-ja,
+    #texto-py,
+    #texto-an,
+    #texto-re,
+    #texto-sc,
+    #texto-ka {
+        display: flex;
+        font-family: var(--font-textos);
+        color: var(--cinza-medio);
+        font-weight: 500;
+        margin: 1rem 1rem 1rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    #box-data-js,
+    #box-data-ja,
+    #box-data-py,
+    #box-data-an,
+    #box-data-re,
+    #box-data-sc,
+    #box-data-ka {
+        display: flex;
+        align-items: center;
+        font-family: var(--font-textos);
+        font-weight: 500;
+        margin: 0rem 1rem 1rem 1rem;
+        font-size: 0.8rem;
+        color: var(--cinza-medio);
+    }
+
+    #data-js,
+    #visualizacoes-js,
+    #data-ja,
+    #visualizacoes-ja,
+    #data-py,
+    #visualizacoes-py,
+    #data-an,
+    #visualizacoes-an,
+    #data-re,
+    #visualizacoes-re,
+    #data-sc,
+    #visualizacoes-sc,
+    #data-ka,
+    #visualizacoes-ka {
+        margin-left: 0.2rem;
+    }
+
+    #icon-check-js,
+    #icon-check-ja,
+    #icon-check-py,
+    #icon-check-an,
+    #icon-check-re,
+    #icon-check-sc,
+    #icon-check-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 1.2rem;
+        margin-left: 2.5rem;
+    }
+
+    #icon-clock-js,
+    #icon-clock-ja,
+    #icon-clock-py,
+    #icon-clock-an,
+    #icon-clock-re,
+    #icon-clock-sc,
+    #icon-clock-ka {
+        color: var(--cor-azul-escuro);
+        font-size: 1.2rem;
+    }
+
+    .footer-js,
+    .footer-ja,
+    .footer-py,
+    .footer-an,
+    .footer-re,
+    .footer-sc,
+    .footer-ka {
+        display: flex;
+        justify-content: center;
+        font-family: var(--font-textos);
+        background-color: var(--cinza-escuro);
+        color: var(--cor-azul-escuro);
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding: 0.3rem;
+        margin: 0rem 1rem 0.5rem 1rem;
+        border-radius: 1rem;
+
+    }
+
+    .footer-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-azul-escuro);
+        position: fixed;
+        bottom: 0;
+        border-radius: 0.2rem;
+    }
+
+    .footer-principal>p {
+        color: var(--cinza-escuro);
+        padding: 1.1rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+        font-family: var(--font-textos);
+    }
+}

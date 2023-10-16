@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Blog/Styles/post.css" media="screen" />
+    <script type="text/javascript" src="/Blog/JavaScript/post-angular.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&family=Nunito:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="shortcut icon" href="/Img/logolaranja.png" />
+    <title>BlogTecX</title>
+</head>
+
+<body>
+    <header class="header-principal">
+        <img id="imagem-blog" src="/Img/logo-blog.png">
+        <div class="buttons">
+            <button id="button-sobre" onclick="redirecionarSobreMim()">Sobre mim</button>
+            <button id="button-inicio" onclick="redirecionarPagInicial()">Voltar ao inicio</button>
+        </div>
+    </header>
+    <main class="main-principal">
+        <div class="artigo">
+            <h1 id="titulo">O que é o Angular?</h1>
+            <p id="texto">
+                É um framework JavaScript de código aberto mantido pela Google para a construção de SPA (sigla para
+                Single Page Applications ou Aplicações de Página Única). Resumidamente, uma SPA é basicamente uma
+                aplicação web construída em uma só página, na qual a interação e a navegação entre as sessões de uma
+                página ocorrem de maneira a qual não é necessário recarregar a página em cada uma dessas mudanças.
+                <br>
+                <br>
+                Sua finalidade é nos dar ferramentas necessárias para criação de aplicações SPA, além disso também deixa
+                o desenvolvimento deste tipo de aplicação mais simples e otimizado. Com ele, podemos desenvolver
+                aplicações web voltadas tanto para resoluções desktop quanto para resoluções mobile, tornando-as
+                dinâmicas, modernas e escaláveis.
+                <br>
+                <br>
+                Com o Angular, temos um novo paradigma de desenvolvimento focado nos dados da aplicação. Ele não utiliza
+                uma virtualização do DOM para manipulá-lo: ele utiliza mecanismos próprios de detecção de alterações na
+                interface, alterações tas disparadas principalmente por uma estrutura chamada Two-Way DataBinding.
+                <br>
+                <br>
+                O Two-Way Data Bindingmantém o model e a view sempre atualizados entre si, ou seja:
+                sempre que algum
+                model é atualizado, essa alteração se reflete automaticamente na view.
+            </p>
+            <h1 id="titulo">AngularJS ou somente Angular?</h1>
+            <p id="texto">
+                Provavelmente, você já ouviu falar de Angular e AngularJS e pode ter ficado em dúvida se é a mesma
+                tecnologia, porque que uma tem “JS” no nome e a outra não. A resposta é: embora o Angular seja a
+                evolução após o AngularJS, eles praticamente são frameworks diferentes.
+                <br>
+                <br>
+                O AngularJS começou em 2009, sendo definido pelas versões 1.x. Já o Angular (antes conhecido como
+                “Angular 2”, publicado em 2016) é considerado a versão 2 mais as versões superiores. Muitos pensam que o
+                Angular é uma continuação do AngularJS em termos de código, o que não é verdade.
+                <br>
+                <br>
+                A versão 2, chamada hoje somente de Angular, foi uma reescrita completa do código e tornou-se uma
+                arquitetura completamente diferente, mantendo apenas o nome – porém sem o JS no final. Nesta nova
+                ferramenta, foram seguidos padrões da web moderna, técnicas e boas práticas que foram aprendidas com os
+                erros cometidos no desenvolvimento da ferramenta anterior.
+                <br>
+                <br>
+                O AngularJS tinha como linguagem padrão o JavaScript. Já o Angular ainda continua baseado no JavaScript,
+                mas através do TypeScript. Com isso, ele passou a oferecer capacidades interessantes antes oferecidas
+                somente pelo TypeScript.
+            </p>
+            <h1 id="titulo">Características</h1>
+            <p id="texto">
+                Suas principais características são:
+                <br>
+                <br>
+                • Suporte cross-platform: esse framework fornece suporte a múltiplas plataformas de desenvolvimento. O
+                Angular pode ser utilizado para criar aplicações web SPA, aplicações mobile (com o suporte do Ionic, por
+                exemplo) ou até mesmo aplicações desktop (com o suporte do Electron).
+                Mesmo em ambientes distintos, a API do Angular permanece praticamente a mesma, o que facilita a
+                curvatura de adoção e aprendizagem em múltiplos ambientes de desenvolvimento;
+                <br>
+                <br>
+                • Integração e suporte à todas as fases de desenvolvimento: provê ferramental e suporte para todas as
+                fases de desenvolvimento, desde a escrita do código em si (apoiando-se bastante na API e no sistema de
+                tipos do TypeScript) até a criação de fluxos de teste (com o apoio principalmente do Karma – uma
+                biblioteca para escrita de testes JavaScript), passando pelo suporte excelente à criação de animações, o
+                provisionamento de estruturas de acessibilidade e até mesmo o scaffolding de projetos através do Angular
+                CLI;
+                <br>
+                <br>
+                • Produtividade aliada à performance: consegue oferecer suporte ao desenvolvimento rápido de aplicações
+                através de uma API simples, bem estruturada e bem documentada, o que acaba trazendo bastante
+                produtividade.
+                Por fim, por mais que o Angular não utilize o conceito de Virtual DOM (conceito utilizado por outros
+                frameworks, como o React), ainda sim o Angular oferece uma performance bem interessante, principalmente
+                com a Ivy, a engine de renderização utilizada desde o Angular 6+.
+            </p>
+            <h1 id="titulo">Mercado</h1>
+            <p id="texto">
+                Atualmente o Angular é um dos frameworks Javascript que dominam o mercado, sendo muito popular nos
+                últimos anos e é utilizado em inúmeros projetos. Por esses motivos, ele vem sendo amplamente requisitado
+                no mercado para desenvolvimento web e mobile, tendo diversas oportunidades no Brasil e no mundo.
+                <br>
+                <br>
+                Através de uma pesquisa feito pelo Stack Overflow neste ano (2020), ao focar em estruturas web, vemos
+                que ele é muito popular. Apesar de o jQuery estar em primeiro, ele está lentamente perdendo espaço para
+                o React.js e o Angular, ano após ano.
+            </p>
+        </div>
+    </main>
+    <div class="rodape">
+        <div class="links">
+            <a id="referencia" href="https://www.treinaweb.com.br/blog/o-que-e-o-angular-e-para-que-serve">Fonte de
+                referência</a>
+            <a id="curso" href="https://www.stackx.com.br/full-stack">Clique aqui para se tornar um Dev FullStack</a>
+        </div>
+        <p id="box-data">
+            <span id="icon-clock" class="material-symbols-outlined">schedule</span>
+            <span id="data"></span>
+            <span id="icon-check" class="material-symbols-outlined">check</span>
+            <span><span id="visualizacoes" style="color: var(--cor-azul-escuro);"></span> views</span>
+        </p>
+    </div>
+    <footer class="footer-principal">
+        <p>Desenvolvido por Vitor Bitencourt Falasca</p>
+    </footer>
+</body>
+
+</html>

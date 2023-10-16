@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Blog/Styles/pagina-inicial.css" media="screen" />
+    <script type="text/javascript" src="/Blog/JavaScript/pagina-inicial.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&family=Nunito:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="shortcut icon" href="/Img/logolaranja.png" />
+    <title>BlogTecX</title>
+</head>
+
+<body>
+    <header class="header-principal">
+        <img id="imagem-blog" src="/Img/logo-blog.png" width="220rem">
+        <div class="buttons">
+            <button id="button-sobre" onclick="redirecionarSobreMim()">Sobre mim</button>
+            <div id="menu-categorias" class="menu-categorias">
+                <button id="button-categorias" onclick="abrirMenu()">Categorias</button>
+                <ul id="categorias">
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="postagens">
+        <section class="scrum" onclick="redirecionarCards('scrum')">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <header class="header-sc">
+                <img id="imagem-sc" src="/Img/scrum logo.png" alt="imagem-sc">
+                <h1 id="titulo-sc">Scrum</h1>
+            </header>
+            <main class="main-sc">
+                <p id="texto-sc">
+                    <span id="icon-lampada-sc" class="material-symbols-outlined">info</span>
+                    Scrum é um conjunto de boas práticas empregado no gerenciamento de projetos complexos, em que não se
+                    conhece todas as etapas ou necessidades.
+                    Focado nos membros da equipe, o Scrum torna os processos...
+                </p>
+                <p id="box-data-sc">
+                    <span id="icon-clock-sc" class="material-symbols-outlined">schedule</span>
+                    <span id="data-sc"></span>
+                    <span id="icon-check-sc" class="material-symbols-outlined">check</span>
+                    <span ><span id="visualizacoes-sc" style="color: var(--cor-azul-escuro);"></span> views</span>
+
+                </p>
+            </main>
+            <footer class="footer-sc">
+                <p id="categoria-sc">Metodologias</p>
+            </footer>
+        </section>
+        <section class="kanban" onclick="redirecionarCards('kanban')">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <header class="header-ka">
+                <img id="imagem-ka" src="/Img/kanbanlogo.png" alt="imagem-ka">
+                <h1 id="titulo-ka">Kanban</h1>
+            </header>
+            <main class="main-ka">
+                <p id="texto-ka">
+                    <span id="icon-lampada-ka" class="material-symbols-outlined">info</span>
+                    Kanban é um método de controle e gerenciamento de estoque e fluxo de peças que utiliza cartões
+                    coloridos
+                    (post-its), também conhecido como gestão visual, por fazer o uso de cores como indicadores.
+                    O Kanban foi criado pela...
+                </p>
+                <p id="box-data-ka">
+                    <span id="icon-clock-ka" class="material-symbols-outlined">schedule</span>
+                    <span id="data-ka"></span>
+                    <span id="icon-check-ka" class="material-symbols-outlined">check</span>
+                    <span><span id="visualizacoes-ka" style="color: var(--cor-azul-ekauro);"></span> views</span>
+
+                </p>
+            </main>
+            <footer class="footer-ka">
+                <p id="categoria-ka">Metodologias</p>
+            </footer>
+        </section>
+    </div>
+    <footer class="footer-principal">
+        <p>Desenvolvido por Vitor Bitencourt Falasca</p>
+    </footer>
+</body>
+
+</html>

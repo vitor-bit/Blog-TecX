@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Blog/Styles/sobre-mim.css" media="screen" />
+    <script type="text/javascript" src="/Blog/JavaScript/sobre-mim.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&family=Nunito:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="shortcut icon" href="/Img/logolaranja.png" />
+    <title>BlogTecX</title>
+</head>
+
+<body>
+    <header class="header-principal">
+        <img id="imagem-blog" src="/Img/logo-blog.png">
+        <div class="buttons">
+            <button id="button-inicio" onclick="redirecionarPagInicial()">Voltar ao inicio</button>
+            <div id="menu-categorias" class="menu-categorias">
+                <button id="button-postagens" onclick="abrirMenu()">Postagens</button>
+                <ul id="categorias">
+                </ul>
+            </div>
+        </div>
+        
+    </header>
+    <main class="main-principal">
+        <img id="imagem-vitor" src="/Img/vitor.jpg">
+        <div class="artigo">
+            <h1 id="titulo">Conheça um pouco sobre mim!</h1>
+            <p id="texto">
+                Olá, sou Vitor Bitencourt e tenho 19 anos. No momento estou
+                cursando a StackX para me tornar um futuro Desenvolvedor e também
+                atuo na área de recrutamento de TI pela Capitani Group, tenho um sonho
+                de trabalhar como Desenvolvedor desde pequeno e sempre fui apaixonado por tecnologia.
+                Já estudei tecnologias como: React.Js, Java Script, Java, Python, Html, CSS,
+                Scrum. Algumas de minhas redes estão aqui abaixo para acessar!
+            </p>
+            <div class="redes">
+                <h1 id="titulo-redes">Acesse minhas redes:</h1>
+                <div class="git-hub" onclick="redirecionarLink('git-hub')">
+                    <img id="imagem-git" src="/Img/github.png" alt="icon-git">
+                    <p id="git-link">GitHub</p>
+                </div>
+                <div class="instagram" onclick="redirecionarLink('instagram')">
+                    <img id="imagem-insta" src="/Img/instagram.png" alt="icon-insta">
+                    <p id="insta-link">Instagram</p>
+                </div>
+                <div class="linkedin" onclick="redirecionarLink('linkedin')">
+                    <img id="imagem-linkedin" src="/Img/linkedin.png" alt="icon-linkedin">
+                    <p id="linkedin-link">Linkedin</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer-principal">
+        <p>Desenvolvido por Vitor Bitencourt Falasca</p>
+    </footer>
+</body>
+
+</html>
